@@ -1,0 +1,36 @@
+/** @format */
+
+* {
+	/* outline: 1px solid red; */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+	width: 50%;
+	margin: auto;
+}
+
+input {
+	width: 70%;
+	height: 30px;
+	margin-top: 1rem;
+}
+
+article {
+	margin-top: 2rem;
+}
+
+article > div {
+	padding: 0.25em;
+	border: 1px blue solid;
+}
+
+article div:nth-child(odd) {
+	transform: perspective(8px) rotateX(1deg);
+}
+
+article div:nth-child(even) {
+	transform: perspective(8px) rotateX(-1deg);
+}
